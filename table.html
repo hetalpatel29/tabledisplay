@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .maindivision {
+            width: 500px;
+            height: 70px;
+            margin: auto;
+            margin-top: 100px;
+            text-align: center;
+            border: 4px solid gray;
+            padding-top: 20px;
+        }
+        
+        .text {
+            width: 200px;
+            height: 40px;
+            border: 2px solid grey;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            color: darkcyan;
+        }
+        
+        button {
+            height: 40px;
+            width: 100px;
+            background-color: darkcyan;
+            text-align: center;
+            color: white;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+        
+        h1 {
+            color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindivision" id="box">
+        <input type="text" class="text" id="number">
+        <button type="button" onclick="table()">click me</button>
+        <h1 id="first"></h1>
+
+    </div>
+
+
+
+</body>
+<script>
+    function table() {
+        let num = document.getElementById("number").value;
+        let ans = document.getElementById("first");
+        ans.innerHTML = num + " X 1 =  " + num * 1 + " <br/>" + num + " X 2 =  " + num * 2 + " <br/>" + num + " X 3 =  " + num * 3 + " <br/>" + num + " X 4 =  " + num * 4 + " <br/>" + num + " X 5 =  " + num * 5 + " <br/>" + num + " X 6 =  " + num * 6 + " <br/>" + num + " X 7 =  " + num * 7 + " <br/>" + num + " X 8 =  " + num * 8 + " <br/>" + num + " X 9 =  " + num * 9 + " <br/>" + num + " X 10 =  " + num * 10;
+        let mainbox = document.getElementById("box").style;
+        mainbox.height = "450px";
+    }
+</script>
+
+</html>
